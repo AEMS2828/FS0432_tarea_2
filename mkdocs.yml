@@ -1,0 +1,27 @@
+site_name: dynamics Module
+
+theme:
+  name: "material"
+
+nav:
+- index.md
+- tutorials.md
+- reference.md
+- explanation.md
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
